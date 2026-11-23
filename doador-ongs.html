@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encontre ONGs | ConectaONG</title>
+  <link rel="icon" href="img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body data-perfil="doador">
+  <header class="cabecalho">
+    <div class="container">
+      <a href="doador-inicio.html" class="logo"><img src="img/logo.png" alt="Mão segurando um coração, símbolo do ConectaONG">ConectaONG</a>
+      <nav class="menu" aria-label="Menu principal">
+        <a href="doador-inicio.html">Início</a>
+        <a href="doador-perfil.html#doacoes">Doações</a>
+        <a href="doador-ongs.html" class="ativo">ONGs</a>
+        <a href="doador-perfil.html">Minha Conta</a>
+        <a href="index.html" id="sair">Sair</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <h1 class="titulo-pagina">Encontre ONGs para doar</h1>
+      <p class="subtitulo-pagina">Busque por nome, cidade ou categoria e escolha a causa que mais combina com você.</p>
+
+      <form class="cartao busca" id="formulario-busca">
+        <div class="campo campo-texto">
+          <label for="busca-texto">Buscar ONGs</label>
+          <input type="text" id="busca-texto" placeholder="Digite o nome ou a cidade">
+        </div>
+        <div class="campo campo-categoria">
+          <label for="busca-categoria">Categoria</label>
+          <select id="busca-categoria">
+            <option value="todas">Todas as categorias</option>
+            <option value="alimentos">Alimentos</option>
+            <option value="educacao">Educação</option>
+            <option value="animais">Animais</option>
+            <option value="meio-ambiente">Meio ambiente</option>
+            <option value="saude">Saúde</option>
+            <option value="cultura">Cultura</option>
+          </select>
+        </div>
+        <button type="submit" class="botao">Buscar</button>
+      </form>
+
+      <section class="secao-media" aria-label="Lista de ONGs">
+        <div class="grade">
+      <article class="cartao card-ong" data-categoria="animais">
+        <div class="circulo">A</div>
+        <h3>ONG Amigos dos Animais</h3>
+        <p>Resgate e cuidado de animais abandonados.</p>
+        <p class="local"><span>Localização:</span> São Paulo, SP</p>
+        <a href="doador-projeto.html" class="botao botao-pequeno">Ver perfil</a>
+      </article>
+      <article class="cartao card-ong" data-categoria="educacao">
+        <div class="circulo">E</div>
+        <h3>ONG Educação para Todos</h3>
+        <p>Apoio escolar e atividades extracurriculares para crianças.</p>
+        <p class="local"><span>Localização:</span> Rio de Janeiro, RJ</p>
+        <a href="doador-projeto.html" class="botao botao-pequeno">Ver perfil</a>
+      </article>
+      <article class="cartao card-ong" data-categoria="meio-ambiente">
+        <div class="circulo">V</div>
+        <h3>ONG Verde Vida</h3>
+        <p>Projetos de reflorestamento e conscientização ambiental.</p>
+        <p class="local"><span>Localização:</span> Belo Horizonte, MG</p>
+        <a href="doador-projeto.html" class="botao botao-pequeno">Ver perfil</a>
+      </article>
+      <article class="cartao card-ong" data-categoria="saude">
+        <div class="circulo">S</div>
+        <h3>ONG Saúde e Bem-Estar</h3>
+        <p>Atendimento médico e campanhas de saúde para comunidades carentes.</p>
+        <p class="local"><span>Localização:</span> Salvador, BA</p>
+        <a href="doador-projeto.html" class="botao botao-pequeno">Ver perfil</a>
+      </article>
+      <article class="cartao card-ong" data-categoria="alimentos">
+        <div class="circulo">M</div>
+        <h3>ONG Mãos Solidárias</h3>
+        <p>Distribuição de alimentos e roupas para famílias em vulnerabilidade.</p>
+        <p class="local"><span>Localização:</span> Curitiba, PR</p>
+        <a href="doador-projeto.html" class="botao botao-pequeno">Ver perfil</a>
+      </article>
+      <article class="cartao card-ong" data-categoria="cultura">
+        <div class="circulo">C</div>
+        <h3>ONG Cultura Viva</h3>
+        <p>Promoção de eventos culturais e oficinas de arte.</p>
+        <p class="local"><span>Localização:</span> Fortaleza, CE</p>
+        <a href="doador-projeto.html" class="botao botao-pequeno">Ver perfil</a>
+      </article>
+        </div>
+        <p class="mensagem-vazia" id="nenhum-resultado">Nenhuma ONG encontrada com esses filtros.</p>
+      </section>
+    </div>
+  </main>
+  <footer class="rodape">
+    <p>&copy; 2026 ConectaONG. Todos os direitos reservados.</p>
+  </footer>
+  <script src="js/acesso.js"></script>
+  <script src="js/busca.js"></script>
+</body>
+</html>

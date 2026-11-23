@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acompanhamento de doações | ConectaONG</title>
+  <link rel="icon" href="img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body data-perfil="entidade">
+  <header class="cabecalho">
+    <div class="container">
+      <a href="ong-painel.html" class="logo"><img src="img/logo.png" alt="Mão segurando um coração, símbolo do ConectaONG">ConectaONG</a>
+      <nav class="menu" aria-label="Menu principal">
+        <a href="ong-painel.html">Início</a>
+        <a href="ong-doacoes.html" class="ativo">Doações</a>
+        <a href="ong-painel.html#perfil-ong">Minha Conta</a>
+        <a href="index.html" id="sair">Sair</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <h1 class="titulo-pagina">Painel da ONG</h1>
+      <section class="secao-media">
+        <h2>Notificações de doações</h2>
+        <div class="lista">
+        <article class="linha">
+          <div class="linha-info">
+            <h3>Novo registro de doação!</h3>
+            <p>Doador: João Silva · Produtos: alimentos (10 kg), brinquedos (5 unidades) · 20/10/2026 14:30</p>
+          </div>
+          <div class="linha-acoes">
+            <span class="selo selo-pendente">Pendente</span>
+            <a href="#" class="botao botao-secundario botao-pequeno">Ver detalhes</a>
+          </div>
+        </article>
+        <article class="linha">
+          <div class="linha-info">
+            <h3>Novo registro de doação!</h3>
+            <p>Doadora: Maria Oliveira · Produtos: roupas (15 peças) · 19/10/2026 10:00</p>
+          </div>
+          <div class="linha-acoes">
+            <span class="selo selo-pendente">Pendente</span>
+            <a href="#" class="botao botao-secundario botao-pequeno">Ver detalhes</a>
+          </div>
+        </article>
+        <article class="linha">
+          <div class="linha-info">
+            <h3>Doação concluída!</h3>
+            <p>Doador: Pedro Souza · Produtos: materiais escolares (20 kits) · 18/10/2026 08:40</p>
+          </div>
+          <div class="linha-acoes">
+            <span class="selo selo-concluida">Concluída</span>
+            <a href="#" class="botao botao-secundario botao-pequeno">Ver detalhes</a>
+          </div>
+        </article>
+        </div>
+      </section>
+      <section class="secao-media">
+        <h2>Filtros de doações</h2>
+        <form class="painel-cinza filtros">
+          <div class="campo">
+            <label for="filtro-data">Data</label>
+            <input type="date" id="filtro-data">
+          </div>
+          <div class="campo">
+            <label for="filtro-produto">Produto</label>
+            <input type="text" id="filtro-produto" placeholder="Nome do produto">
+          </div>
+          <div class="campo">
+            <label for="filtro-status">Status</label>
+            <select id="filtro-status">
+              <option>Todos</option>
+              <option>Pendente</option>
+              <option>Concluída</option>
+            </select>
+          </div>
+          <button type="button" class="botao botao-pequeno">Aplicar filtros</button>
+        </form>
+      </section>
+      <section class="secao-media">
+        <h2>Acompanhamento de doações</h2>
+        <div class="lista">
+        <article class="linha">
+          <div class="linha-info">
+            <h3>Doador: João Silva</h3>
+            <p>Produtos: alimentos (10 kg), brinquedos (5 unidades) · Registro: 20/10/2026 14:30 · Ponto de coleta: Rua Exemplo, 123 · Centro</p>
+          </div>
+          <div class="linha-acoes">
+            <span class="selo selo-pendente">Pendente</span>
+            <button type="button" class="botao botao-pequeno">Atualizar status</button>
+          </div>
+        </article>
+        <article class="linha">
+          <div class="linha-info">
+            <h3>Doadora: Maria Oliveira</h3>
+            <p>Produtos: roupas (15 peças) · Registro: 19/10/2026 10:00 · Ponto de coleta: Av. Principal, 456 · Bairro Novo</p>
+          </div>
+          <div class="linha-acoes">
+            <span class="selo selo-pendente">Pendente</span>
+            <button type="button" class="botao botao-pequeno">Atualizar status</button>
+          </div>
+        </article>
+        <article class="linha">
+          <div class="linha-info">
+            <h3>Doador: Pedro Souza</h3>
+            <p>Produtos: materiais escolares (20 kits) · Registro: 18/10/2026 08:40 · Ponto de coleta: Rua da Paz, 789 · Vila Velha</p>
+          </div>
+          <div class="linha-acoes">
+            <span class="selo selo-concluida">Concluída</span>
+            <a href="#" class="botao botao-secundario botao-pequeno">Ver detalhes</a>
+          </div>
+        </article>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="rodape">
+    <p>&copy; 2026 ConectaONG. Todos os direitos reservados.</p>
+  </footer>
+  <script src="js/acesso.js"></script>
+</body>
+</html>

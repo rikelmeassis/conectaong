@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finalizar doação | ConectaONG</title>
+  <link rel="icon" href="img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body data-perfil="doador">
+  <header class="cabecalho">
+    <div class="container">
+      <a href="doador-inicio.html" class="logo"><img src="img/logo.png" alt="Mão segurando um coração, símbolo do ConectaONG">ConectaONG</a>
+      <nav class="menu" aria-label="Menu principal">
+        <a href="doador-inicio.html">Início</a>
+        <a href="doador-perfil.html#doacoes">Doações</a>
+        <a href="doador-ongs.html" class="ativo">ONGs</a>
+        <a href="doador-perfil.html">Minha Conta</a>
+        <a href="index.html" id="sair">Sair</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container coluna-estreita">
+      <h1 class="titulo-pagina">Finalizar doação</h1>
+      <section class="painel-cinza detalhes">
+        <h2>Detalhes da doação</h2>
+        <dl>
+          <dt>ONG selecionada</dt>
+          <dd>ONG Mãos Solidárias</dd>
+          <dt>Itens doados</dt>
+          <dd>• Arroz (5 kg)</dd>
+          <dd>• Feijão (3 kg)</dd>
+          <dd>• Leite em pó (2 unidades)</dd>
+          <dt>Ponto de coleta selecionado</dt>
+          <dd>Rua das Flores, 123 · Centro · Belo Horizonte, MG</dd>
+          <dd>Horário de funcionamento: seg a sex, 9h às 17h</dd>
+        </dl>
+      </section>
+      <form id="formulario-doacao" class="secao-pequena">
+        <div class="campo">
+          <label for="observacao">Observações (opcional)</label>
+          <textarea id="observacao" placeholder="Adicione qualquer observação sobre sua doação ou o agendamento da entrega."></textarea>
+        </div>
+        <div class="botoes-separados">
+          <a href="doador-projeto.html" class="botao botao-secundario">Voltar</a>
+          <button type="submit" class="botao">Confirmar doação</button>
+        </div>
+      </form>
+    </div>
+  </main>
+  <footer class="rodape">
+    <p>&copy; 2026 ConectaONG. Todos os direitos reservados.</p>
+  </footer>
+  <script src="js/acesso.js"></script>
+  <script src="js/doacao.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Configurações | ConectaONG</title>
+  <link rel="icon" href="img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body data-perfil="admin">
+  <header class="cabecalho">
+    <div class="container">
+      <a href="admin-painel.html" class="logo"><img src="img/logo.png" alt="Mão segurando um coração, símbolo do ConectaONG">ConectaONG</a>
+      <nav class="menu" aria-label="Menu principal">
+        <a href="admin-painel.html">Início</a>
+        <a href="admin-doacoes.html">Doações</a>
+        <a href="admin-configuracoes.html" class="ativo">Minha Conta</a>
+        <a href="index.html" id="sair">Sair</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <h1 class="titulo-pagina">Painel administrativo</h1>
+      <div class="admin">
+        <nav class="menu-lateral" aria-label="Menu do administrador">
+          <a href="admin-painel.html">Visão geral</a>
+          <a href="admin-ongs.html">Gerenciar ONGs</a>
+          <a href="admin-doacoes.html">Gerenciar doações</a>
+          <a href="admin-usuarios.html">Usuários</a>
+          <a href="admin-configuracoes.html" class="ativo">Configurações</a>
+        </nav>
+        <div class="admin-conteudo">
+          <h2>Configurações</h2>
+          <form class="form-aviso" data-mensagem="Alterações salvas com sucesso!">
+            <div class="cartao">
+              <h3>Dados da plataforma</h3>
+              <div class="campo">
+                <label for="nome-plataforma">Nome da plataforma</label>
+                <input type="text" id="nome-plataforma" value="ConectaONG" required>
+              </div>
+              <div class="campo">
+                <label for="email-contato">E-mail de contato</label>
+                <input type="email" id="email-contato" value="contato@conectaong.org.br" required>
+              </div>
+              <div class="campo">
+                <label for="boas-vindas">Mensagem de boas-vindas</label>
+                <textarea id="boas-vindas">Texto exibido na página inicial do site.</textarea>
+              </div>
+              <div class="campo">
+                <label for="categoria-padrao">Categoria padrão na busca</label>
+                <select id="categoria-padrao">
+            <option value="todas">Todas as categorias</option>
+            <option value="alimentos">Alimentos</option>
+            <option value="educacao">Educação</option>
+            <option value="animais">Animais</option>
+            <option value="meio-ambiente">Meio ambiente</option>
+            <option value="saude">Saúde</option>
+            <option value="cultura">Cultura</option>
+                </select>
+              </div>
+            </div>
+            <div class="botoes-direita">
+              <a href="admin-painel.html" class="botao botao-secundario botao-pequeno">Cancelar</a>
+              <button type="submit" class="botao botao-pequeno">Salvar alterações</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="rodape">
+    <p>&copy; 2026 ConectaONG. Todos os direitos reservados.</p>
+  </footer>
+  <script src="js/acesso.js"></script>
+  <script src="js/aviso.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Usuários | ConectaONG</title>
+  <link rel="icon" href="img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body data-perfil="admin">
+  <header class="cabecalho">
+    <div class="container">
+      <a href="admin-painel.html" class="logo"><img src="img/logo.png" alt="Mão segurando um coração, símbolo do ConectaONG">ConectaONG</a>
+      <nav class="menu" aria-label="Menu principal">
+        <a href="admin-painel.html" class="ativo">Início</a>
+        <a href="admin-doacoes.html">Doações</a>
+        <a href="admin-configuracoes.html">Minha Conta</a>
+        <a href="index.html" id="sair">Sair</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <h1 class="titulo-pagina">Painel administrativo</h1>
+      <div class="admin">
+        <nav class="menu-lateral" aria-label="Menu do administrador">
+          <a href="admin-painel.html">Visão geral</a>
+          <a href="admin-ongs.html">Gerenciar ONGs</a>
+          <a href="admin-doacoes.html">Gerenciar doações</a>
+          <a href="admin-usuarios.html" class="ativo">Usuários</a>
+          <a href="admin-configuracoes.html">Configurações</a>
+        </nav>
+        <div class="admin-conteudo">
+          <h2>Usuários</h2>
+          <form class="painel-cinza filtros">
+            <div class="campo">
+              <label for="buscar-usuario">Buscar usuário</label>
+              <input type="text" id="buscar-usuario" placeholder="Nome ou e-mail">
+            </div>
+            <div class="campo">
+              <label for="perfil-usuario">Perfil</label>
+              <select id="perfil-usuario">
+                <option>Todos</option>
+                <option>Doador</option>
+                <option>ONG</option>
+                <option>Administrador</option>
+              </select>
+            </div>
+            <button type="button" class="botao botao-pequeno">Buscar</button>
+          </form>
+          <div class="lista">
+        <article class="linha">
+          <div class="linha-info">
+            <h3>João Silva</h3>
+            <p>joao.silva@email.com · Doador · Cadastro em 02/06/2026</p>
+          </div>
+          <div class="linha-acoes">
+            <span class="selo selo-concluida">Ativo</span>
+            <a href="#" class="botao botao-secundario botao-pequeno">Editar</a>
+            <button type="button" class="botao botao-perigo botao-pequeno">Desativar</button>
+          </div>
+        </article>
+        <article class="linha">
+          <div class="linha-info">
+            <h3>Maria Oliveira</h3>
+            <p>maria.oliveira@email.com · Doadora · Cadastro em 14/07/2026</p>
+          </div>
+          <div class="linha-acoes">
+            <span class="selo selo-concluida">Ativo</span>
+            <a href="#" class="botao botao-secundario botao-pequeno">Editar</a>
+            <button type="button" class="botao botao-perigo botao-pequeno">Desativar</button>
+          </div>
+        </article>
+        <article class="linha">
+          <div class="linha-info">
+            <h3>Equipe ONG Mãos Solidárias</h3>
+            <p>contato@maossolidarias.org.br · ONG · Cadastro em 03/08/2026</p>
+          </div>
+          <div class="linha-acoes">
+            <span class="selo selo-concluida">Ativo</span>
+            <a href="#" class="botao botao-secundario botao-pequeno">Editar</a>
+            <button type="button" class="botao botao-perigo botao-pequeno">Desativar</button>
+          </div>
+        </article>
+        <article class="linha">
+          <div class="linha-info">
+            <h3>Carlos Pereira</h3>
+            <p>carlos.pereira@email.com · Doador · Cadastro em 09/10/2026</p>
+          </div>
+          <div class="linha-acoes">
+            <span class="selo selo-pendente">E-mail não confirmado</span>
+            <a href="#" class="botao botao-secundario botao-pequeno">Editar</a>
+            <button type="button" class="botao botao-perigo botao-pequeno">Desativar</button>
+          </div>
+        </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="rodape">
+    <p>&copy; 2026 ConectaONG. Todos os direitos reservados.</p>
+  </footer>
+  <script src="js/acesso.js"></script>
+</body>
+</html>

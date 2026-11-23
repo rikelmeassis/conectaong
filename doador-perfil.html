@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu perfil e impacto | ConectaONG</title>
+  <link rel="icon" href="img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body data-perfil="doador">
+  <header class="cabecalho">
+    <div class="container">
+      <a href="doador-inicio.html" class="logo"><img src="img/logo.png" alt="Mão segurando um coração, símbolo do ConectaONG">ConectaONG</a>
+      <nav class="menu" aria-label="Menu principal">
+        <a href="doador-inicio.html">Início</a>
+        <a href="doador-perfil.html#doacoes">Doações</a>
+        <a href="doador-ongs.html">ONGs</a>
+        <a href="doador-perfil.html" class="ativo">Minha Conta</a>
+        <a href="index.html" id="sair">Sair</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <h1 class="titulo-pagina">Meu perfil e impacto</h1>
+      <div class="perfil">
+        <section class="cartao perfil-dados">
+          <h2>Informações do doador</h2>
+          <form class="form-aviso" data-mensagem="Perfil atualizado com sucesso!">
+            <div class="campo">
+              <label for="nome">Nome completo</label>
+              <input type="text" id="nome" value="João Silva" required>
+            </div>
+            <div class="campo">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" value="joao.silva@email.com" required>
+            </div>
+            <div class="campo">
+              <label for="telefone">Telefone</label>
+              <input type="tel" id="telefone" value="(27) 99999-1234">
+            </div>
+            <button type="submit" class="botao botao-cheio botao-pequeno">Editar perfil</button>
+          </form>
+        </section>
+        <section class="perfil-impacto">
+          <h2>Meu impacto</h2>
+      <section class="numeros " aria-label="Números">
+        <div class="numero"><span>Doações realizadas</span><strong>5</strong></div>
+        <div class="numero"><span>ONGs apoiadas</span><strong>3</strong></div>
+      </section>
+
+          <h3 class="titulo-lista" id="doacoes">Resumo das doações recentes</h3>
+          <div class="lista">
+            <article class="linha linha-coluna">
+              <h4>Doação para ONG Esperança · 10/10/2026</h4>
+              <p>Itens: alimentos, roupas, brinquedos</p>
+              <p>Status: <span class="selo selo-concluida">Entregue</span></p>
+            </article>
+            <article class="linha linha-coluna">
+              <h4>Doação para o Projeto Futuro · 05/09/2026</h4>
+              <p>Itens: livros, cadernos e lápis</p>
+              <p>Status: <span class="selo selo-concluida">Entregue</span></p>
+            </article>
+          </div>
+          <p class="espaco-topo"><a href="#doacoes" class="botao botao-secundario botao-pequeno">Ver histórico completo</a></p>
+        </section>
+      </div>
+
+      <section class="secao">
+        <h2>ONGs favoritas</h2>
+        <div class="grade">
+      <article class="cartao card-ong" data-categoria="educacao">
+        <div class="circulo">E</div>
+        <h3>ONG Esperança</h3>
+        <p>Apoio a crianças em situação de vulnerabilidade.</p>
+        <p class="local"><span>Localização:</span> Recife, PE</p>
+        <a href="doador-projeto.html" class="botao botao-pequeno">Ver perfil</a>
+      </article>
+      <article class="cartao card-ong" data-categoria="educacao">
+        <div class="circulo">P</div>
+        <h3>Projeto Futuro</h3>
+        <p>Oficinas profissionalizantes para jovens.</p>
+        <p class="local"><span>Localização:</span> Porto Alegre, RS</p>
+        <a href="doador-projeto.html" class="botao botao-pequeno">Ver perfil</a>
+      </article>
+      <article class="cartao card-ong" data-categoria="meio-ambiente">
+        <div class="circulo">A</div>
+        <h3>Amigos da Natureza</h3>
+        <p>Educação ambiental e reflorestamento.</p>
+        <p class="local"><span>Localização:</span> Manaus, AM</p>
+        <a href="doador-projeto.html" class="botao botao-pequeno">Ver perfil</a>
+      </article>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="rodape">
+    <p>&copy; 2026 ConectaONG. Todos os direitos reservados.</p>
+  </footer>
+  <script src="js/acesso.js"></script>
+  <script src="js/aviso.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciar doações | ConectaONG</title>
+  <link rel="icon" href="img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body data-perfil="admin">
+  <header class="cabecalho">
+    <div class="container">
+      <a href="admin-painel.html" class="logo"><img src="img/logo.png" alt="Mão segurando um coração, símbolo do ConectaONG">ConectaONG</a>
+      <nav class="menu" aria-label="Menu principal">
+        <a href="admin-painel.html">Início</a>
+        <a href="admin-doacoes.html" class="ativo">Doações</a>
+        <a href="admin-configuracoes.html">Minha Conta</a>
+        <a href="index.html" id="sair">Sair</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <h1 class="titulo-pagina">Painel administrativo</h1>
+      <div class="admin">
+        <nav class="menu-lateral" aria-label="Menu do administrador">
+          <a href="admin-painel.html">Visão geral</a>
+          <a href="admin-ongs.html">Gerenciar ONGs</a>
+          <a href="admin-doacoes.html" class="ativo">Gerenciar doações</a>
+          <a href="admin-usuarios.html">Usuários</a>
+          <a href="admin-configuracoes.html">Configurações</a>
+        </nav>
+        <div class="admin-conteudo">
+          <h2>Gerenciar doações</h2>
+      <section class="numeros " aria-label="Números">
+        <div class="numero"><span>Doações pendentes</span><strong>45</strong></div>
+        <div class="numero"><span>Concluídas no mês</span><strong>88</strong></div>
+        <div class="numero"><span>Total no ano</span><strong>1.240</strong></div>
+      </section>
+
+          <form class="painel-cinza filtros">
+            <div class="campo">
+              <label for="filtro-data">Data</label>
+              <input type="date" id="filtro-data">
+            </div>
+            <div class="campo">
+              <label for="filtro-nome">ONG ou doador</label>
+              <input type="text" id="filtro-nome" placeholder="Digite um nome">
+            </div>
+            <div class="campo">
+              <label for="filtro-status">Status</label>
+              <select id="filtro-status">
+                <option>Todos</option>
+                <option>Pendente</option>
+                <option>Concluída</option>
+              </select>
+            </div>
+            <button type="button" class="botao botao-pequeno">Aplicar filtros</button>
+          </form>
+          <div class="lista">
+        <article class="linha">
+          <div class="linha-info">
+            <h3>João Silva → ONG Amigos do Bem</h3>
+            <p>Alimentos (10 kg), brinquedos (5 unidades) · 20/10/2026 14:30</p>
+          </div>
+          <div class="linha-acoes">
+            <span class="selo selo-pendente">Pendente</span>
+            <a href="#" class="botao botao-secundario botao-pequeno">Ver detalhes</a>
+          </div>
+        </article>
+        <article class="linha">
+          <div class="linha-info">
+            <h3>Maria Oliveira → ONG Esperança</h3>
+            <p>Roupas (15 peças) · 19/10/2026 10:00</p>
+          </div>
+          <div class="linha-acoes">
+            <span class="selo selo-pendente">Pendente</span>
+            <a href="#" class="botao botao-secundario botao-pequeno">Ver detalhes</a>
+          </div>
+        </article>
+        <article class="linha">
+          <div class="linha-info">
+            <h3>Pedro Souza → ONG Mãos Solidárias</h3>
+            <p>Materiais escolares (20 kits) · 18/10/2026 08:40</p>
+          </div>
+          <div class="linha-acoes">
+            <span class="selo selo-concluida">Concluída</span>
+            <a href="#" class="botao botao-secundario botao-pequeno">Ver detalhes</a>
+          </div>
+        </article>
+        <article class="linha">
+          <div class="linha-info">
+            <h3>Ana Costa → ONG Verde Vida</h3>
+            <p>Mudas e ferramentas (20 itens) · 15/10/2026 11:20</p>
+          </div>
+          <div class="linha-acoes">
+            <span class="selo selo-concluida">Concluída</span>
+            <a href="#" class="botao botao-secundario botao-pequeno">Ver detalhes</a>
+          </div>
+        </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="rodape">
+    <p>&copy; 2026 ConectaONG. Todos os direitos reservados.</p>
+  </footer>
+  <script src="js/acesso.js"></script>
+</body>
+</html>

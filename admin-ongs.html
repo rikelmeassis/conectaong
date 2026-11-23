@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciar ONGs | ConectaONG</title>
+  <link rel="icon" href="img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body data-perfil="admin">
+  <header class="cabecalho">
+    <div class="container">
+      <a href="admin-painel.html" class="logo"><img src="img/logo.png" alt="Mão segurando um coração, símbolo do ConectaONG">ConectaONG</a>
+      <nav class="menu" aria-label="Menu principal">
+        <a href="admin-painel.html" class="ativo">Início</a>
+        <a href="admin-doacoes.html">Doações</a>
+        <a href="admin-configuracoes.html">Minha Conta</a>
+        <a href="index.html" id="sair">Sair</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <h1 class="titulo-pagina">Painel administrativo</h1>
+      <div class="admin">
+        <nav class="menu-lateral" aria-label="Menu do administrador">
+          <a href="admin-painel.html">Visão geral</a>
+          <a href="admin-ongs.html" class="ativo">Gerenciar ONGs</a>
+          <a href="admin-doacoes.html">Gerenciar doações</a>
+          <a href="admin-usuarios.html">Usuários</a>
+          <a href="admin-configuracoes.html">Configurações</a>
+        </nav>
+        <div class="admin-conteudo">
+          <h2>Gerenciar ONGs</h2>
+      <section class="numeros " aria-label="Números">
+        <div class="numero"><span>ONGs aprovadas</span><strong>120</strong></div>
+        <div class="numero"><span>Aguardando aprovação</span><strong>7</strong></div>
+      </section>
+
+          <form class="painel-cinza filtros">
+            <div class="campo">
+              <label for="buscar-ong">Buscar ONG</label>
+              <input type="text" id="buscar-ong" placeholder="Nome ou CNPJ">
+            </div>
+            <div class="campo">
+              <label for="situacao">Situação</label>
+              <select id="situacao">
+                <option>Todas</option>
+                <option>Aguardando aprovação</option>
+                <option>Aprovada</option>
+              </select>
+            </div>
+            <button type="button" class="botao botao-pequeno">Buscar</button>
+          </form>
+          <div class="lista">
+        <article class="linha">
+          <div class="linha-info">
+            <h3>ONG Esperança</h3>
+            <p>CNPJ 12.345.678/0001-90 · Recife, PE · Cadastro enviado em 20/10/2026</p>
+          </div>
+          <div class="linha-acoes">
+            <span class="selo selo-pendente">Aguardando aprovação</span>
+            <button type="button" class="botao botao-pequeno botao-aprovar">Aprovar</button>
+            <button type="button" class="botao botao-perigo botao-pequeno botao-recusar">Recusar</button>
+          </div>
+        </article>
+        <article class="linha">
+          <div class="linha-info">
+            <h3>ONG Amigos do Bem</h3>
+            <p>CNPJ 98.765.432/0001-10 · São Paulo, SP · Aprovada em 12/09/2026</p>
+          </div>
+          <div class="linha-acoes">
+            <span class="selo selo-concluida">Aprovada</span>
+            <a href="#" class="botao botao-secundario botao-pequeno">Ver perfil</a>
+          </div>
+        </article>
+        <article class="linha">
+          <div class="linha-info">
+            <h3>ONG Mãos Solidárias</h3>
+            <p>CNPJ 45.678.912/0001-33 · Curitiba, PR · Aprovada em 03/08/2026</p>
+          </div>
+          <div class="linha-acoes">
+            <span class="selo selo-concluida">Aprovada</span>
+            <a href="#" class="botao botao-secundario botao-pequeno">Ver perfil</a>
+          </div>
+        </article>
+        <article class="linha">
+          <div class="linha-info">
+            <h3>ONG Verde Vida</h3>
+            <p>CNPJ 11.222.333/0001-44 · Belo Horizonte, MG · Aprovada em 21/07/2026</p>
+          </div>
+          <div class="linha-acoes">
+            <span class="selo selo-concluida">Aprovada</span>
+            <a href="#" class="botao botao-secundario botao-pequeno">Ver perfil</a>
+          </div>
+        </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="rodape">
+    <p>&copy; 2026 ConectaONG. Todos os direitos reservados.</p>
+  </footer>
+  <script src="js/acesso.js"></script>
+  <script src="js/aprovacao.js"></script>
+</body>
+</html>

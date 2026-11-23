@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doação registrada | ConectaONG</title>
+  <link rel="icon" href="img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body data-perfil="doador">
+  <header class="cabecalho">
+    <div class="container">
+      <a href="doador-inicio.html" class="logo"><img src="img/logo.png" alt="Mão segurando um coração, símbolo do ConectaONG">ConectaONG</a>
+      <nav class="menu" aria-label="Menu principal">
+        <a href="doador-inicio.html">Início</a>
+        <a href="doador-perfil.html#doacoes" class="ativo">Doações</a>
+        <a href="doador-ongs.html">ONGs</a>
+        <a href="doador-perfil.html">Minha Conta</a>
+        <a href="index.html" id="sair">Sair</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <section class="sucesso">
+        <div class="icone-sucesso" aria-hidden="true">&#10003;</div>
+        <h1>Doação registrada com sucesso!</h1>
+        <p>Agradecemos imensamente sua contribuição. Sua doação faz a diferença!</p>
+        <div class="painel-cinza">
+          <h2>Detalhes da doação</h2>
+          <p><strong>ONG beneficiada:</strong> ONG Mãos Solidárias</p>
+          <p><strong>Itens doados:</strong> Arroz (5 kg), Feijão (3 kg), Leite em pó (2 unidades)</p>
+          <p><strong>Ponto de coleta:</strong> Rua das Flores, 123 · Centro · Belo Horizonte, MG</p>
+          <p><strong>Data do registro:</strong> <span id="data-registro"></span></p>
+          <p><strong>Observação:</strong> <span id="observacao-registro"></span></p>
+          <p><strong>Status:</strong> <span class="selo selo-pendente">Pendente de entrega</span></p>
+        </div>
+        <div class="grupo-botoes">
+          <a href="doador-perfil.html#doacoes" class="botao botao-pequeno">Ver histórico de doações</a>
+          <a href="doador-inicio.html" class="botao botao-secundario botao-pequeno">Voltar à página inicial</a>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="rodape">
+    <p>&copy; 2026 ConectaONG. Todos os direitos reservados.</p>
+  </footer>
+  <script src="js/acesso.js"></script>
+  <script src="js/doacao-registrada.js"></script>
+</body>
+</html>

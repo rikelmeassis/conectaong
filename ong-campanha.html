@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova campanha | ConectaONG</title>
+  <link rel="icon" href="img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body data-perfil="entidade">
+  <header class="cabecalho">
+    <div class="container">
+      <a href="ong-painel.html" class="logo"><img src="img/logo.png" alt="Mão segurando um coração, símbolo do ConectaONG">ConectaONG</a>
+      <nav class="menu" aria-label="Menu principal">
+        <a href="ong-painel.html" class="ativo">Início</a>
+        <a href="ong-doacoes.html">Doações</a>
+        <a href="ong-painel.html#perfil-ong">Minha Conta</a>
+        <a href="index.html" id="sair">Sair</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container coluna-campanha">
+      <h1 class="titulo-pagina">Criar nova campanha de doação</h1>
+      <form id="formulario-campanha">
+        <div class="campo">
+          <label for="titulo">Nome da campanha</label>
+          <input type="text" id="titulo" placeholder="Ex.: Campanha de Inverno 2026" required>
+        </div>
+        <div class="campo">
+          <label for="descricao">Descrição da campanha</label>
+          <textarea id="descricao" placeholder="Descreva o objetivo da campanha e os produtos que serão arrecadados."></textarea>
+        </div>
+        <div class="linha-campos">
+          <div class="campo">
+            <label for="dt-criacao">Data de início</label>
+            <input type="date" id="dt-criacao" required>
+          </div>
+          <div class="campo">
+            <label for="dt-limite">Data de término (opcional)</label>
+            <input type="date" id="dt-limite">
+          </div>
+        </div>
+        <h2 class="titulo-lista">Produtos necessários para a campanha</h2>
+        <div class="lista">
+        <article class="linha">
+          <div class="linha-info">
+            <h3>Alimentos</h3>
+            <p>Categoria: Cestas básicas · Quantidade estimada: 50 unidades</p>
+          </div>
+          <div class="linha-acoes">
+            <span class="selo selo-alta">Urgência alta</span>
+            
+          </div>
+        </article>
+        <article class="linha">
+          <div class="linha-info">
+            <h3>Roupas</h3>
+            <p>Categoria: Agasalhos · Quantidade estimada: 100 peças</p>
+          </div>
+          <div class="linha-acoes">
+            <span class="selo selo-media">Urgência média</span>
+            
+          </div>
+        </article>
+        <article class="linha">
+          <div class="linha-info">
+            <h3>Brinquedos</h3>
+            <p>Categoria: Infantis · Quantidade estimada: 30 unidades</p>
+          </div>
+          <div class="linha-acoes">
+            <span class="selo selo-baixa">Urgência baixa</span>
+            
+          </div>
+        </article>
+        </div>
+        <p class="espaco-topo"><a href="ong-painel.html#necessidades" class="botao botao-secundario botao-pequeno">Adicionar novo item necessário</a></p>
+        <div class="botoes-direita">
+          <a href="ong-painel.html" class="botao botao-secundario botao-pequeno">Cancelar</a>
+          <button type="submit" class="botao botao-pequeno">Salvar campanha</button>
+        </div>
+      </form>
+    </div>
+  </main>
+  <footer class="rodape">
+    <p>&copy; 2026 ConectaONG. Todos os direitos reservados.</p>
+  </footer>
+  <script src="js/acesso.js"></script>
+  <script src="js/campanha.js"></script>
+</body>
+</html>

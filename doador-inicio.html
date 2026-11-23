@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Início do doador | ConectaONG</title>
+  <link rel="icon" href="img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body data-perfil="doador">
+  <header class="cabecalho">
+    <div class="container">
+      <a href="doador-inicio.html" class="logo"><img src="img/logo.png" alt="Mão segurando um coração, símbolo do ConectaONG">ConectaONG</a>
+      <nav class="menu" aria-label="Menu principal">
+        <a href="doador-inicio.html" class="ativo">Início</a>
+        <a href="doador-perfil.html#doacoes">Doações</a>
+        <a href="doador-ongs.html">ONGs</a>
+        <a href="doador-perfil.html">Minha Conta</a>
+        <a href="index.html" id="sair">Sair</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <section class="destaque">
+        <div class="destaque-texto">
+          <h1>Bem-vindo(a), doador(a)!</h1>
+          <p>Encontre ONGs e faça a diferença com suas doações. Cada item doado chega a quem mais precisa.</p>
+        </div>
+        <div class="destaque-imagem">
+          <img src="img/doacao-caixa.png" alt="Pessoa colocando corações dentro de uma caixa de doação">
+        </div>
+      </section>
+
+      <form class="cartao busca" id="formulario-busca">
+        <div class="campo campo-texto">
+          <label for="busca-texto">Buscar ONGs</label>
+          <input type="text" id="busca-texto" placeholder="Digite o nome ou a cidade">
+        </div>
+        <div class="campo campo-categoria">
+          <label for="busca-categoria">Categoria</label>
+          <select id="busca-categoria">
+            <option value="todas">Todas as categorias</option>
+            <option value="alimentos">Alimentos</option>
+            <option value="educacao">Educação</option>
+            <option value="animais">Animais</option>
+            <option value="meio-ambiente">Meio ambiente</option>
+            <option value="saude">Saúde</option>
+            <option value="cultura">Cultura</option>
+          </select>
+        </div>
+        <button type="submit" class="botao">Buscar</button>
+      </form>
+
+      <section class="secao">
+        <h2>ONGs em destaque</h2>
+        <div class="grade">
+      <article class="cartao card-ong" data-categoria="animais">
+        <div class="circulo">A</div>
+        <h3>ONG Amigos dos Animais</h3>
+        <p>Resgate e cuidado de animais abandonados.</p>
+        <p class="local"><span>Localização:</span> São Paulo, SP</p>
+        <a href="doador-projeto.html" class="botao botao-pequeno">Ver perfil</a>
+      </article>
+      <article class="cartao card-ong" data-categoria="educacao">
+        <div class="circulo">I</div>
+        <h3>Instituto de Educação Infantil</h3>
+        <p>Apoio educacional para crianças carentes.</p>
+        <p class="local"><span>Localização:</span> Rio de Janeiro, RJ</p>
+        <a href="doador-projeto.html" class="botao botao-pequeno">Ver perfil</a>
+      </article>
+      <article class="cartao card-ong" data-categoria="alimentos">
+        <div class="circulo">M</div>
+        <h3>Mãos que Ajudam</h3>
+        <p>Distribuição de alimentos e roupas para a comunidade.</p>
+        <p class="local"><span>Localização:</span> Belo Horizonte, MG</p>
+        <a href="doador-projeto.html" class="botao botao-pequeno">Ver perfil</a>
+      </article>
+        </div>
+        <p class="mensagem-vazia" id="nenhum-resultado">Nenhuma ONG encontrada com esses filtros.</p>
+      </section>
+    </div>
+  </main>
+  <footer class="rodape">
+    <p>&copy; 2026 ConectaONG. Todos os direitos reservados.</p>
+  </footer>
+  <script src="js/acesso.js"></script>
+  <script src="js/busca.js"></script>
+</body>
+</html>

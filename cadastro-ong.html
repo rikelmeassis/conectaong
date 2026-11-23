@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de ONG | ConectaONG</title>
+  <link rel="icon" href="img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="container">
+      <a href="index.html" class="logo"><img src="img/logo.png" alt="Mão segurando um coração, símbolo do ConectaONG">ConectaONG</a>
+      <nav class="menu-botoes" aria-label="Acesso">
+        <a href="login.html" class="botao botao-secundario botao-pequeno">Entrar</a>
+        <a href="cadastro.html" class="botao botao-pequeno">Cadastre-se</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <section class="formulario-centro">
+        <h1>Cadastro de ONG</h1>
+        <p class="texto-apoio">Conte sobre a sua organização para começar a receber doações.</p>
+        <form id="formulario-ong">
+          <div class="campo">
+            <label for="razao-social">Nome da organização</label>
+            <input type="text" id="razao-social" placeholder="Nome completo da ONG" required>
+          </div>
+          <div class="campo">
+            <label for="tipo-org">Tipo</label>
+            <select id="tipo-org">
+              <option value="ONG">ONG</option>
+              <option value="GRUPO">Grupo</option>
+            </select>
+          </div>
+          <div class="campo">
+            <label for="cnpj">CNPJ</label>
+            <input type="text" id="cnpj" placeholder="XX.XXX.XXX/XXXX-XX" required>
+          </div>
+          <div class="campo">
+            <label for="endereco">Endereço</label>
+            <input type="text" id="endereco" placeholder="Rua, número, bairro, cidade, estado" required>
+          </div>
+          <div class="campo">
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" placeholder="(XX) XXXXX-XXXX">
+          </div>
+          <div class="campo">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="contato@ong.org.br" required>
+          </div>
+          <div class="campo">
+            <label for="descricao">Descrição da ONG</label>
+            <textarea id="descricao" placeholder="Fale um pouco sobre a missão e o trabalho da sua organização."></textarea>
+          </div>
+          <div class="campo">
+            <span class="rotulo">Foto ou logotipo</span>
+            <label for="logo-ong" class="campo-arquivo">Arraste uma imagem aqui ou clique para enviar</label>
+            <input type="file" id="logo-ong" accept="image/*" class="arquivo-escondido">
+          </div>
+          <button type="submit" class="botao botao-cheio">Cadastrar ONG</button>
+        </form>
+        <p class="texto-centro texto-apoio">Seu perfil será publicado após aprovação.</p>
+      </section>
+    </div>
+  </main>
+  <footer class="rodape">
+    <p>&copy; 2026 ConectaONG. Todos os direitos reservados.</p>
+  </footer>
+  <script src="js/cadastro-ong.js"></script>
+</body>
+</html>

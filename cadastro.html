@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crie sua conta | ConectaONG</title>
+  <link rel="icon" href="img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="container">
+      <a href="index.html" class="logo"><img src="img/logo.png" alt="Mão segurando um coração, símbolo do ConectaONG">ConectaONG</a>
+      <nav class="menu-botoes" aria-label="Acesso">
+        <a href="login.html" class="botao botao-secundario botao-pequeno">Entrar</a>
+        <a href="cadastro.html" class="botao botao-pequeno">Cadastre-se</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <section class="pagina-acesso">
+        <div class="acesso-imagem">
+          <img src="img/doacao-celular.png" alt="Duas pessoas colocando corações em um celular escrito donation">
+        </div>
+        <div class="acesso-formulario">
+          <h1>Crie sua conta</h1>
+          <p class="texto-apoio">Leva menos de um minuto para começar a ajudar.</p>
+          <form id="formulario-cadastro">
+            <div class="campo">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" placeholder="Digite seu nome" required>
+            </div>
+            <div class="campo">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" placeholder="Digite seu e-mail" required>
+            </div>
+            <div class="campo">
+              <label for="senha">Senha</label>
+              <input type="password" id="senha" placeholder="Digite sua senha" required>
+            </div>
+            <div class="campo">
+              <label for="tipo">Eu sou:</label>
+              <select id="tipo">
+                <option value="doador">Doador</option>
+                <option value="ong">ONG</option>
+              </select>
+            </div>
+            <button type="submit" class="botao botao-cheio">Cadastrar</button>
+          </form>
+          <p class="texto-centro">Já tem uma conta? <a href="login.html">Entrar</a></p>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="rodape">
+    <p>&copy; 2026 ConectaONG. Todos os direitos reservados.</p>
+  </footer>
+  <script src="js/cadastro.js"></script>
+</body>
+</html>

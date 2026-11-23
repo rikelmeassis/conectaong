@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhes do projeto | ConectaONG</title>
+  <link rel="icon" href="img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body data-perfil="doador">
+  <header class="cabecalho">
+    <div class="container">
+      <a href="doador-inicio.html" class="logo"><img src="img/logo.png" alt="Mão segurando um coração, símbolo do ConectaONG">ConectaONG</a>
+      <nav class="menu" aria-label="Menu principal">
+        <a href="doador-inicio.html">Início</a>
+        <a href="doador-perfil.html#doacoes">Doações</a>
+        <a href="doador-ongs.html" class="ativo">ONGs</a>
+        <a href="doador-perfil.html">Minha Conta</a>
+        <a href="index.html" id="sair">Sair</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <h1 class="titulo-pagina">Detalhes do projeto</h1>
+      <div class="duas-colunas">
+        <section class="info-projeto">
+          <div class="imagem-projeto">
+            <img src="img/doacao-caixa.png" alt="Pessoa colocando corações dentro de uma caixa de doação">
+          </div>
+          <h2>Inverno Solidário</h2>
+          <p>Campanha para arrecadar alimentos, material escolar e itens de higiene para famílias atendidas pela ONG durante o inverno. Cada doação ajuda a garantir que ninguém comece o ano sem o básico.</p>
+          <span class="selo selo-media">Urgência média</span>
+          <ul>
+            <li>Localização: Belo Horizonte, MG</li>
+            <li>Prazo: 31/12/2026 (faltam <span id="prazo-dias" data-limite="2026-12-31"></span> dias)</li>
+            <li>Pessoas beneficiadas: 500</li>
+          </ul>
+        </section>
+        <section>
+          <h2 class="titulo-necessidades">Necessidades atuais</h2>
+          <div class="painel-cinza necessidade">
+            <h3>Alimentos não perecíveis</h3>
+            <ul>
+              <li>• Arroz (50 kg)</li>
+              <li>• Feijão (30 kg)</li>
+              <li>• Óleo (20 litros)</li>
+            </ul>
+          </div>
+          <div class="painel-cinza necessidade">
+            <h3>Material escolar</h3>
+            <ul>
+              <li>• Cadernos (100 unidades)</li>
+              <li>• Lápis (200 unidades)</li>
+              <li>• Mochilas (50 unidades)</li>
+            </ul>
+          </div>
+          <div class="painel-cinza necessidade">
+            <h3>Higiene pessoal</h3>
+            <ul>
+              <li>• Sabonetes (150 unidades)</li>
+              <li>• Creme dental (100 unidades)</li>
+            </ul>
+          </div>
+          <div class="como-doar">
+            <h2>Como doar</h2>
+            <p>Você pode doar os itens listados acima em um dos nossos pontos de coleta.</p>
+            <a href="doador-finalizar.html" class="botao">Doar itens físicos</a>
+          </div>
+        </section>
+      </div>
+
+      <section class="cartao sobre-ong">
+        <div class="circulo circulo-grande">M</div>
+        <div class="sobre-texto">
+          <h2 class="titulo-sobre">Sobre a ONG · ONG Mãos Solidárias</h2>
+          <p>Distribuição de alimentos e roupas para famílias em vulnerabilidade, com mais de 10 anos de atuação.</p>
+        </div>
+        <a href="doador-ongs.html">Ver perfil completo da ONG</a>
+      </section>
+    </div>
+  </main>
+  <footer class="rodape">
+    <p>&copy; 2026 ConectaONG. Todos os direitos reservados.</p>
+  </footer>
+  <script src="js/acesso.js"></script>
+  <script src="js/prazo.js"></script>
+</body>
+</html>

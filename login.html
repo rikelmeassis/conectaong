@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrar | ConectaONG</title>
+  <link rel="icon" href="img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="container">
+      <a href="index.html" class="logo"><img src="img/logo.png" alt="Mão segurando um coração, símbolo do ConectaONG">ConectaONG</a>
+      <nav class="menu-botoes" aria-label="Acesso">
+        <a href="login.html" class="botao botao-secundario botao-pequeno">Entrar</a>
+        <a href="cadastro.html" class="botao botao-pequeno">Cadastre-se</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <section class="pagina-acesso">
+        <div class="acesso-imagem">
+          <img src="img/doacao-caixa.png" alt="Pessoa colocando corações dentro de uma caixa de doação">
+        </div>
+        <div class="acesso-formulario">
+          <h1>Bem-vindo(a) de volta</h1>
+          <p class="texto-apoio">Entre para acompanhar suas doações ou gerenciar sua ONG.</p>
+          <p class="erro" id="erro-login">Usuário ou senha incorretos. Tente novamente.</p>
+          <form id="formulario-login">
+            <div class="campo">
+              <label for="usuario">Usuário</label>
+              <input type="text" id="usuario" placeholder="Digite seu usuário" required>
+            </div>
+            <div class="campo">
+              <label for="senha">Senha</label>
+              <input type="password" id="senha" placeholder="Digite sua senha" required>
+            </div>
+            <p class="link-direita"><a href="#">Esqueceu a senha?</a></p>
+            <button type="submit" class="botao botao-cheio">Entrar</button>
+          </form>
+          <p class="texto-centro">Ainda não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="rodape">
+    <p>&copy; 2026 ConectaONG. Todos os direitos reservados.</p>
+  </footer>
+  <script src="js/login.js"></script>
+</body>
+</html>
